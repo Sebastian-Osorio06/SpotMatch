@@ -12,28 +12,36 @@ document.addEventListener("DOMContentLoaded", () => {
     const sesionSinIniciar = document.querySelector(".sesionSinIniciar");
 
 
-    // Abrir y cerrar menú sesion
-    btnSesion.addEventListener("click", () => {
-        menuSesion.classList.toggle("show");
-    });
+  // Abrir y cerrar menú sesión
+btnSesion.addEventListener("click", (event) => {
+    event.stopPropagation();
+
+    menuIdiomas.classList.remove("show");
+    menuSesion.classList.toggle("show");
+});
+
+// Abrir y cerrar menú idiomas
+btnIdiomas.addEventListener("click", (event) => {
+    event.stopPropagation();
+    menuSesion.classList.remove("show");
+    menuIdiomas.classList.toggle("show");
+});
 
 
-    // Abrir y cerrar menú idiomas
-    btnIdiomas.addEventListener("click", () => {
-        menuIdiomas.classList.toggle("show");
-    });
+// Cerrar al pulsar fuera de ambos menús
+document.addEventListener("click", (event) => {
+    const clickDentroSesion = menuSesion.contains(event.target) || btnSesion.contains(event.target);
 
+    const clickDentroIdiomas = menuIdiomas.contains(event.target) || btnIdiomas.contains(event.target);
 
-    // Cerrar al pulsar fuera del menú
-    document.addEventListener("click", (event) => {
+    if (!clickDentroSesion) {
+        menuSesion.classList.remove("show");
+    }
 
-        const clickDentroMenu = menuSesion.contains(event.target);
-        const clickBotonMenu = btnSesion.contains(event.target);
-
-        if (!clickDentroMenu && !clickBotonMenu) {
-            menuSesion.classList.remove("show");
-        }
-    });
+    if (!clickDentroIdiomas) {
+        menuIdiomas.classList.remove("show");
+    }
+});
 
 
     // Cerrar al pasar a PC
