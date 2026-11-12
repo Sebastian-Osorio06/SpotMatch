@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpotMatch</title>
+  <link rel="stylesheet" href="css/generales.css" />
+  <!-- <link rel="stylesheet" href="css/home.css" /> -->
+</head>
+
+<body>
+  <header>
+  
+    <a href="index.html"><img src="assets/logos/spotmatch-logo-base.png" alt="spotmatch-logo-base"></a>
+    
+    <div>
+
+<div>
+    <button id="btn-idiomas">
+        <i class="icons" data-lucide="globe"></i>
+    </button>
+
+    <div id="menu-idiomas">
+        <div>
+            <p>Idioma</p>
+            <select id="idioma">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Moneda</p>
+            <select id="moneda">
+                <option value="EUR">€</option>
+                <option value="USD">$</option>
+                <option value="GBP">£</option>
+            </select>
+        </div>
+
+        <button id="btn-guardar-preferencias">Guardar</button>
+    </div>
+</div>
+
+
+      <div>
+        <button id="btn-sesion">
+          <i class="icons" data-lucide="menu"></i>
+          <i class="icons" data-lucide="user"></i>
+        </button>
+
+        <div id="menu-sesion">
+          <div class="sesionIniciada">
+            <p>Sebastian Osorio Rengifo</p>
+            <p>jsorion488@</p>
+            <button id="btn-cerrar-sesion">Cerrar Sesión</button>
+          </div>
+
+          <div class="sesionSinIniciar show">
+            <p>Inicia sesión para gestionar tus reservas</p>
+            <button id="btn-iniciar-sesion">Iniciar Sesión</button>
+          </div>
+
+          <nav> 
+            <a href="#"><i data-lucide="heart"></i>Favoritos</a>
+            <a href="#"><i data-lucide="clock-4"></i>Vistos recientemente</a>
+            <a href="#"><i data-lucide="calendar"></i>Mis reservas</a>
+            <a href="#"><i data-lucide="settings"></i>Preferencias</a>
+            <a href="#"><i data-lucide="circle-question-mark"></i>Ayuda</a>
+            <a href="#"><i data-lucide="door-open"></i>Cerrar Sesion</a>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+  <main>
+    <!-- <section class="hero">
+      <div>
+        <h1>Encuentra tu próximo alojamiento perfecto</h1>
+        <p>Hoteles, apartamentos y mucho más. Reserva al mejor precio garantzado</p>
+      </div> -->
+
+      <!-- Formulario fechas -->
+      <!-- <form action="#" method="POST">
+        <div class="buscador-campo">
+          <label for="destino">Destino</label>
+          <input type="text" id="destino" name="destino" placeholder="¿A dónde vas?" required />
+        </div>
+
+        <div class="buscador-campo">
+          <label for="entrada">Fechas</label>
+          <input type="date" id="entrada" name="entrada" required />
+          <input type="date" id="salida" name="salida" required />
+        </div>
+
+        <div class="buscador-campo">
+          <label for="viajeros">Viajeros</label>
+          <input type="number" id="capacidad" name="capacidad" placeholder="Cantidad de viajeros" required />
+        </div>
+
+        <button type="submit">Buscar</button>
+      </form>
+
+    </section> -->
+
+    <!-- Tipos de alojamiento -->
+    <!-- <section class="buscar-alojamiento">
+      <h2>Buscar por tipo de alojamiento</h2>
+      <p class="descripcion-seccion">
+        Elige el alojamiento que mejor se adapta a tu viaje
+      </p>
+
+      <div class="lista-tarjetas">
+        <article class="opcionAlojamiento">
+          <i class="icons" data-lucide="hotel" class=""></i>
+          <h3>Hoteles</h3>
+        </article>
+
+        <article class="opcionAlojamiento">
+          <i class="icons" data-lucide="bed-double" class=""></i>
+          <h3>Hostales</h3>
+        </article>
+
+        <article class="opcionAlojamiento">
+          <i class="icons" data-lucide="building-complex" class=""></i>
+          <h3>Apartamentos</h3>
+        </article>
+
+        <article class="opcionAlojamiento">
+          <i class="icons" data-lucide="house" class=""></i>
+          <h3>Villas</h3>
+        </article>
+
+        <article class="opcionAlojamiento">
+          <i class="icons" data-lucide="castle" class=""></i>
+          <h3>Chalets</h3>
+        </article>
+
+        <article class="opcionAlojamiento">
+          <i class="icons" data-lucide="tree-palm" class=""></i>
+          <h3>Resorts</h3>
+        </article>
+
+        <article class="opcionAlojamiento">
+          <i class="icons" data-lucide="tree-pine" class=""></i>
+          <h3>Casas rurales</h3>
+        </article>
+
+        <article class="opcionAlojamiento">
+          <i class="icons" data-lucide="door-open" class=""></i>
+          <h3>Habitaciones</h3>
+        </article>
+      </div>
+    </section> -->
+
+    <!-- Destinos de moda -->
+    <!-- <section class="destinos-moda">
+      <h2>Destinos de moda</h2>
+      <p class="descripcion-seccion">Los más reservados por viajeros españoles esta temporada</p>
+
+      <div class="lista-tarjetas">
+        <article class="tarjeta-destino">
+          <img src="assets/images/londres-detalles.png" alt="Vista de Londres" />
+        </article>
+
+        <article class="tarjeta-destino">
+          <img src="assets/images/paris-detalles.png" alt="Vista de París" />
+        </article>
+
+        <article class="tarjeta-destino">
+          <img src="assets/images/roma-detalles.png" alt="Coliseo de Roma" />
+        </article>
+
+        <article class="tarjeta-destino">
+          <img src="assets/images/lisboa-detalles.png" alt="Calle de Lisboa" />
+        </article>
+      </div>
+    </section> -->
+
+    <!-- Destinos de España -->
+    <!-- <section class="destinos-espana">
+      <h2>Descubre España</h2>
+      <p class="descripcion-seccion">
+        Los mejores destinos de la Península e Islas
+      </p>
+
+      <div class="lista-tarjetas">
+        <article class="tarjeta destino">
+          <img src="assets/images/madrid-spain.png" alt="imagen-madrid" />
+        </article>
+
+        <article class="tarjeta destino">
+          <img src="assets/images/barcelona-spain.png" alt="imagen-barcelona" />
+        </article>
+
+        <article class="tarjeta destino">
+          <img src="assets/images/sevilla-spain.png" alt="imagen-sevilla" />
+        </article>
+
+        <article class="tarjeta destino">
+          <img src="assets/images/granada-spain.png" alt="imagen-granada" />
+        </article>
+
+        <article class="tarjeta destino">
+          <img src="assets/images/toledo-spain.png" alt="imagen-toledo" />
+        </article>
+
+        <article class="tarjeta destino">
+          <img src="assets/images/tenerife-spain.png" alt="imagen-tenerife" />
+        </article>
+
+        <article class="tarjeta destino">
+          <img src="assets/images/mallorca-spain.png" alt="imagen-mallorca" />
+        </article>
+
+        <article class="tarjeta destino">
+          <img src="assets/images/valencia-spain.png" alt="imagen-valencia" />
+        </article>
+
+        <article class="tarjeta destino">
+          <img src="assets/images/malaga-spain.png" alt="imagen-malaga" />
+        </article>
+
+        <article class="tarjeta destino">
+          <img src="assets/images/brugos-spain.png" alt="imagen-burgos" />
+        </article>
+      </div>
+    </section> -->
+  </main>
+
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <!-- Marca y descripción -->
+    <div class="footer-brand">
+      <img src="assets/logos/spotmatch-wordmark-base.png" alt="spotmatch-wordmark-base" style="width: 280px;">
+
+      <p>
+        Tu plataforma de reservas de confianza.
+        Encuentra el alojamiento perfecto para tu próxima aventura.
+      </p>
+    </div>
+    <div class="footer-main">
+    <!-- Información -->
+    <section>
+      <h3>Información</h3>
+
+      <nav>
+        <ul>
+          <li><a href="#">Sobre SpotMatch</a></li>
+          <li><a href="#">Cómo trabajamos</a></li>
+          <li><a href="#">Trabaja con nosotros</a></li>
+          <li><a href="#">Prensa y novedades</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Ayuda y soporte -->
+    <section>
+      <h3>Ayuda y soporte</h3>
+
+      <nav>
+        <ul>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Guía para viajeros</a></li>
+          <li><a href="#">Experiencias y actividades</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Contacto -->
+    <section>
+      <h3>Contacto</h3>
+      <ul>
+          <li>Menorca, España</li>
+          <li><a href="mailto:info@spotmatch.com">info@spotmatch.com</a></li>
+          <li><a href="tel:+34900000000">+34 900 000 000</a></li>
+      </ul>
+
+      </section>
+
+    <!-- Redes sociales -->
+    <section>
+      <h3>Síguenos</h3>
+
+      <nav>
+        <ul>
+          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Twitter</a></li>
+        </ul>
+      </nav>
+
+    </section>
+    </div>
+    
+    <!-- Parte inferior del footer -->
+    <section class="footer-bottom">
+      <p>© 2026 SpotMatch. Todos los derechos reservados.</p>
+
+      <nav>
+        <ul>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </nav>
+
+    </section>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <!-- Para poner un icono es con la etiqueta i, data-lucide="nombre del icono" <i data-lucide = "check" class="iconos"></i> -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
