@@ -1,18 +1,17 @@
 <!doctype html>
-<html lang="es">
+<html lang="ES">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SpotMatch</title>
-  <link rel="stylesheet" href="css/generales.css" />
+  <link rel="icon" href="assets/logos/spotmatch-logo-base.png">
+  <link rel="stylesheet" href="css/estilos-base.css" />
   <link rel="stylesheet" href="css/home.css" />
 </head>
 
 <body>
   <header>
-          
-
     <a href="index.html"><img src="assets/logos/spotmatch-wordmark-base.png" alt="spotmatch-logo-base"></a>
 
     <div>
@@ -77,15 +76,14 @@
   </header>
   <main>
 
-    <section class="hero">
-      
-      <div>
+    <section class="hero">  
+      <div class="contenedor-general">
         <h1>Encuentra tu próximo alojamiento perfecto</h1>
         <p>Hoteles, apartamentos y mucho más. Reserva al mejor precio garantizado</p>
       </div>
 
       <!-- Formulario reserva -->
-      <form class="card" action="#" method="POST">
+      <form class="card contenedor-general" action="#" method="POST">
       <!-- Campo Destino -->
       <div class="buscador-campo">
         <label class="text-small" for="destino">DESTINO</label>
@@ -112,9 +110,9 @@
         Buscar
       </button>
       </form>
-
     </section>
 
+    <div class="contenedor-general"> 
     <!-- Tipos de alojamiento -->
     <section class="buscar-alojamiento">
       <div class="descripcion-seccion"> 
@@ -126,42 +124,42 @@
       <div class="lista-tarjetas card">
         <article class="opcionAlojamiento card">
           <i class="icons" data-lucide="hotel"></i>
-          <h3>Hoteles</h3>
+          <h3 class="text-secondary" >Hoteles</h3>
         </article>
 
         <article class="opcionAlojamiento card">
           <i class="icons" data-lucide="bed-double"></i>
-          <h3>Hostales</h3>
+          <h3 class="text-secondary">Hostales</h3>
         </article>
 
         <article class="opcionAlojamiento card">
           <i class="icons" data-lucide="building-complex"></i>
-          <h3>Apartamentos</h3>
+          <h3 class="text-secondary">Apartamentos</h3>
         </article>
 
         <article class="opcionAlojamiento card">
           <i class="icons" data-lucide="house"></i>
-          <h3>Villas</h3>
+          <h3 class="text-secondary">Villas</h3>
         </article>
 
         <article class="opcionAlojamiento card">
           <i class="icons" data-lucide="castle"></i>
-          <h3>Chalets</h3>
+          <h3 class="text-secondary">Chalets</h3>
         </article>
 
         <article class="opcionAlojamiento card">
           <i class="icons" data-lucide="tree-palm"></i>
-          <h3>Resorts</h3>
+          <h3 class="text-secondary">Resorts</h3>
         </article>
 
         <article class="opcionAlojamiento card">
           <i class="icons" data-lucide="tree-pine"></i>
-          <h3>Casas rurales</h3>
+          <h3 class="text-secondary">Casas rurales</h3>
         </article>
 
         <article class="opcionAlojamiento card">
           <i class="icons" data-lucide="door-open"></i>
-          <h3>Habitaciones</h3>
+          <h3 class="text-secondary">Habitaciones</h3>
         </article>
       </div>
     </section>
@@ -193,11 +191,10 @@
 
     <!-- Destinos de España -->
     <section class="destinos-espana">
-      <h2>Descubre España</h2>
-      <p class="descripcion-seccion">
-        Los mejores destinos de la Península e Islas
-      </p>
-
+      <div class="descripcion-seccion"> 
+        <h2>Descubre España</h2>
+        <p> Los mejores destinos de la Península e Islas</p>
+      </div>
       <div class="lista-tarjetas">
 
         <article class="tarjeta-destino">
@@ -243,8 +240,6 @@
       </div>
     </section>
   </main>
-
-
 
   <!-- ========== FOOTER ========== -->
   <footer>

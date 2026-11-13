@@ -7,31 +7,29 @@
 
 :root {
   /* ESTADOS INTERACTIVOS */
-  --color-hover: #2e6967; /* Un punto más claro y vivo para el hover del verde principal */
-  --color-verde-oscuro: #194343; /* Tu tono base oscuro elegido */
-  --color-active-inverso: #68a3a1; /* Tono claro y suave para estados sobre fondos oscuros */
+  --color-hover: #2e6967; 
+  --color-verde-oscuro: #194343; 
+  --color-active-inverso: #68a3a1; 
 
   /* COLORES PRINCIPALES */
-  --color-verde-principal: #225251; /* Tu tono base principal elegido */
-  --color-verde-secundario: #3b7a78; /* Tono secundario en armonía (equilibrio perfecto entre tu verde/azul y un toque turquesa elegante) */
+  --color-verde-principal: #225251; 
+  --color-verde-secundario: #6bb9b643; 
   
-  /* FONDOS (Los que te gustaban) */
+  /* FONDOS*/
   --color-fondo: #f3efe8; 
   --color-fondo-tarjetas: #fcf9f7;
 
-  /* TEXTOS (Los que te gustaban) */
+  /* TEXTOS*/
   --color-texto: #25211f;
   --color-texto-secundario: #546e7a; 
   --color-texto-inverso: #fcf9f7; 
 
-  /* BORDES (Los que te gustaban) */
+  /* BORDES */
   --color-borde: #ddd7c8;
 
   /* ESTADOS */
   --color-error: #c84f4f;
-  --margen-lateral: 20px;
 }
-
 /* TIPOGRAFIA */
 @font-face {
   font-family: "Source Sans 3";
@@ -56,11 +54,6 @@ body {
     font-size: 1rem; 
     line-height: 1.5;
 }
-
-main{
-  flex: 1;
-}
-
 /* ===== ELEMENTOS GENERALES ===== */
 /* BOTONES */
 button {
@@ -158,6 +151,13 @@ ul{
   border-radius: 12px;
 }
 
+ /* CONTENEDOR QUE CENTRA CREANDO MARGENES */
+.contenedor-general {
+    width: calc(100% - 40px);
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
 /* HEADER */
 header {
     display: flex;
@@ -167,8 +167,8 @@ header {
 
     width: 100%;
     height: 65px;
-    padding-left:var(--margen-lateral);
-    padding-right: var(--margen-lateral);
+    padding-left:20px;
+    padding-right: 20px;
     background-color: var(--color-verde-principal);
 }
 
@@ -238,8 +238,8 @@ footer, footer section, footer ul{
 }
 
 footer{
-    padding-left:var(--margen-lateral);
-    padding-right: var(--margen-lateral);
+    padding-left:20px;
+    padding-right: 20px;
 }
 
 .footer-brand {
@@ -270,36 +270,27 @@ footer section:nth-of-type(4) ul{
     border-top: 1px solid var(--color-texto-inverso);
 }
 /* Version TABLET */
-@media (min-width: 640px) {
-  :root {
-      --margen-lateral: 40px;
-  }
-  header,footer {
-    padding-left: var(--margen-lateral);
-    padding-right: var(--margen-lateral);
-  }
+@media (min-width: 1024px) {
+  h1 {font-size: 2.25rem; /* 36px */}
+  h2 {font-size: 1.625rem; /* 26px */}
+  h3 {font-size: 1.25rem; /* 20px */}
 }
 
 /* Version PC */
 @media (min-width: 1024px) {
-    :root {
-      --margen-lateral: 80px;
-  }
-
   h1 {font-size: 2.5rem; /* 40px */}
   h2 {font-size: 1.75rem; /* 28px */}
   h3 {font-size: 1.375rem; /* 22px */}
   .text-small {font-size: 0.8125rem; /* 13px */}
   
   header{
-    padding-left: var(--margen-lateral);
-    padding-right: var(--margen-lateral);
+    padding-left:80px;
+    padding-right: 80px;
   }
-
   footer {
     flex-flow: row wrap;
-    padding-left: var(--margen-lateral);
-    padding-right: var(--margen-lateral);
+    padding-left:80px;
+    padding-right: 80px;
   }
 
   .footer-main{
@@ -328,17 +319,17 @@ footer section:nth-of-type(4) ul{
 
 /* Version PC Grande / 2K o superiores */
 @media (min-width: 1921px) {
-  :root {
-      --margen-lateral: 160px;
-  }
   h1 {font-size: 3rem; /* 48px */}
   h2 {font-size: 2rem; /* 32px */}
   h3 {font-size: 1.5rem; /* 24px */}
   h4 {font-size: 1.125rem; /* 18px */}
   .text-small {font-size: 0.875rem; /* 14px */}
-
-  header,footer{
-    padding-left: var(--margen-lateral);
-    padding-right: var(--margen-lateral);
+  header{
+    padding-left:160px;
+    padding-right: 160px;
+  }
+  footer {
+    padding-left:160px;
+    padding-right: 160px;
   }
 }
