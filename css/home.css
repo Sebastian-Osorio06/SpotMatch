@@ -1,0 +1,142 @@
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    width: 100%;
+    min-height: 540px;
+    padding: 50px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url('../assets/images/banner-atardecer.png') center / cover;
+}
+
+.hero > div{
+    width: 100%;
+    color: var(--color-texto-inverso);
+    text-align: center;
+}
+
+.hero form{
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.buscador-campo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.hero form label {
+    font-weight: bold;
+}
+
+/*===== TIPOS DE ALOJAMIENTO =====*/
+main > section:nth-child(n+2):nth-child(-n+4) {
+    padding: 0 20px;
+}
+.descripcion-seccion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.lista-tarjetas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; 
+    gap: 40px
+}
+
+.tarjeta-destino{
+    flex: 1 1 100%;
+    max-width: 500px;
+}  
+
+.destinos-espana .lista-tarjetas{
+    gap: 15px;
+}
+.destinos-espana .tarjeta-destino{
+    flex: 1 1 40%;
+    max-width: 250px;
+}   
+
+.tarjeta-destino img{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+
+.opcionAlojamiento {
+    /* Como .card ya tiene display: flex y flex-direction: column, 
+       solo ajustamos las propiedades específicas de esta tarjeta */
+    justify-content: center;
+    align-items: center;
+
+    /* Tamaño flexible y uniforme para que entren 2 en móvil y salten en pantallas grandes */
+    flex: 1 1 100px;  /* Crece, encoge, base de 140px */
+     /* Evita que crezcan demasiado en pantallas intermedias */
+    height: 120px;    /* Altura fija cuadrada/rectangular uniforme */
+    background-color: var(--color-fondo-tarjetas);
+    box-sizing: border-box;
+}
+
+/* Estilo para el contenedor del icono (crea el círculo de fondo) */
+.opcionAlojamiento .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+    color:var(--color-verde-principal);
+    background-color: var(--color-active-inverso); /* Un tono suave de fondo */
+    border-radius: 50%; 
+}
+/* Ajuste del texto para que no sea un h3 gigante */
+/* .opcionAlojamiento h3 {
+    font-size: 0.9rem; 
+    text-align: center;
+    margin: 0;         
+} */
+@media (min-width: 640px) {
+    .tarjeta-destino{
+        flex: 1 1 calc(50% - 20px); /* 50% del ancho menos el espacio del gap */
+}
+
+}
+
+
+@media (min-width: 1024px) {
+/* ===== HERO ===== */
+   .hero form{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .buscador-campo input{
+        height: 50px;
+    }
+
+    /* Campos del 2.º al 4.º */
+    .buscador-campo:nth-child(n+2):nth-child(-n+4) {
+        width: 500px;
+    }
+
+    .hero form button{  
+        margin-top: 25px;
+        padding: 10px 80px;
+    }
+         .tarjeta-destino{
+        flex: 1 1 calc(25% - 20px); /* 25% del ancho para que entren exactamente las 4 */
+}
+}
+
