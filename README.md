@@ -1,6 +1,6 @@
 # SpotMatch
 
-Proyecto de desarrollo web orientado a la búsqueda y elección de lugares o alojamientos que se ajusten a las preferencias de cada persona.
+Proyecto de desarrollo web orientado a la búsqueda y elección de alojamientos que se ajusten a las preferencias del cliente.
 
 ## Descripción
 
